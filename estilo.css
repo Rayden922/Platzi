@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+
+}
+body::-webkit-scrollbar{
+    width: 6px;
+
+}
+body::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: orangered;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin-right: 50px;
+}
+nav ul{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end
+}   
+ul a{
+    border-radius: 17px;
+    padding: 9px;
+    color: white; 
+   
+    
+}
+
+li{
+    margin-left: 25px;
+}
+
+.titulo{
+    color:white;
+    font-size: 45px;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    letter-spacing: 20px;
+    text-align: center;
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+    position: relative;
+}
+.boton{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    display: flex;
+    justify-content: center;
+}
+.boton a {
+    border-radius: 5px;
+    padding: 35px 50px;
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 35px;
+}
+section img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+.boton a:hover{
+    background-color: yellowgreen
+}
+@media (max-width:900px)
+{
+ 
+section img{
+
+    height: auto;
+}
+}
+@media (max-width:850px)
+{
+    body{
+        background-color: #0a0a0a;
+    }
+  nav  ul{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+    .titulo{
+        font-size: 25px;
+    }
+    .boton a{
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:280px)
+{
+    a img{
+        width: 25px;
+        margin-top: 15px;
+    }
+   
+}
