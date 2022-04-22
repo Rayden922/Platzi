@@ -9,7 +9,135 @@ body{
     background-color: black;
 }
 main{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     height: auto;
+    margin: 50px auto;
+}
+.label-menu{
+    width: 100%;
+    height: 80px;
+    background-color:bisque;
+    display: flex;
+    
+
+    
+}
+label {
+    color: darkolivegreen;
+    font-size: 25px;
+    padding: 22px;
+    cursor: pointer;
+
+}
+label:hover{
+    background-color: darkkhaki;
+}
+.content-burger{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+.burgers-menu, .entradas-menu{
+width: 100%;
+height: 600px;
+background-color: burlywood;
+overflow-y: scroll;
+position: absolute;
+transition: all 500ms ease;
+}
+.entradas-menu{
+    visibility: hidden;
+    transform:scale(0.95) ;
+    opacity: 0;
+}
+#burger1, #entradas1{
+    display: none;
+}
+#burger1:checked ~ .burgers-menu,
+#entradas1:checked ~ .entradas-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+
+
+}
+
+
+.burgers-menu::-webkit-scrollbar{
+    width: 7px;
+}
+.burgers-menu::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.entradas-menu::-webkit-scrollbar{
+    width: 7px;
+}
+.entradas-menu::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.burger, .burger-queso, .burger-champi,.entrada-boneles{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 15px;
+}
+.imagen-clasica {
+    width: 60%;
+    height: auto;
+}
+.imagen-clasica img{
+    width: 100%;
+    height: 80% 
+}
+.texto-clasica 
+{   width: 40%;
+
+}
+.texto-clasica h2 {
+    font-size: 50px;
+    color: orangered;
+    margin-left: 50px;
+}
+.texto-clasica p   {
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width:678px)
+{
+    .burger, .burger-queso, .burger-champi,.entrada-boneles{
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .imagen-clasica{
+        width: 95%;
+    }
+    .texto-clasica{
+        width: 90%;
+        text-align: center;
+    }
+    .texto-clasica h2 {
+        font-size: 50px;
+        color: orangered;
+        margin-left: 0px;
+    }
+    .label-menu{
+        width: 100%;
+        height: auto;
+        background-color:bisque;
+        display: flex;
+        flex-wrap: wrap;
+        
+    
+        
+    }
+    label{
+        width: 100%;
+    }
 }
